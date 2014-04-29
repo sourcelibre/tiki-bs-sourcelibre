@@ -1,6 +1,7 @@
 {
-  "name": "twbs/bootstrap",
-  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "name": "lphuberdeau/tiki-bootstrap",
+  "type": "tiki-theme",
+  "description": "Fork of the popular twbs/bootstrap for use within Tiki Wiki CMS Groupware",
   "keywords": [
     "css",
     "js",
@@ -11,7 +12,7 @@
     "framework",
     "web"
   ],
-  "homepage": "http://getbootstrap.com",
+  "homepage": "http://tiki.org",
   "authors": [
     {
       "name": "Mark Otto",
@@ -23,7 +24,7 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/twbs/bootstrap/issues"
+    "issues": "https://dev.tiki.org",
   },
   "license": "MIT",
   "extra": {
