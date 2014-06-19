@@ -210,6 +210,10 @@ dd {
     &:extend(.clearfix all); // Clear the floated `dt` if an empty `dd` is present
   }
 
+  dd {
+	  margin: @description-list-margin;
+  }
+
   @media (min-width: @grid-float-breakpoint) {
     dt {
       float: left;

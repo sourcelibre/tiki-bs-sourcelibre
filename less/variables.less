@@ -13,11 +13,14 @@
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
-@brand-primary:         #428bca;
-@brand-success:         #5cb85c;
-@brand-info:            #5bc0de;
-@brand-warning:         #f0ad4e;
-@brand-danger:          #d9534f;
+@brand-primary:         #769099;
+@brand-success:         #6fcdff;
+@brand-info:            #599ccc; // #59b0cc;
+@brand-warning:         #cc955e;
+@brand-danger:          #ff8b83;
+
+@blabla-navbar-bg:         @gray-dark;
+@blabla-navbar-text:       #ffffff;
 
 
 //== Scaffolding
@@ -30,7 +33,7 @@
 @text-color:            @gray-dark;
 
 //** Global textual link color.
-@link-color:            @brand-primary;
+@link-color:            @brand-info;
 //** Link hover color set via `darken()` function.
 @link-hover-color:      darken(@link-color, 15%);
 
@@ -58,7 +61,8 @@
 @font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.428571429; // 20/14
+//@line-height-base:        1.428571429; // 20/14
+@line-height-base:			1.33;
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
@@ -91,11 +95,11 @@
 @padding-base-vertical:     6px;
 @padding-base-horizontal:   12px;
 
-@padding-large-vertical:    10px;
-@padding-large-horizontal:  16px;
+@padding-large-vertical:    3px;
+@padding-large-horizontal:  10px;
 
-@padding-small-vertical:    5px;
-@padding-small-horizontal:  10px;
+@padding-small-vertical:    1px;
+@padding-small-horizontal:  5px;
 
 @padding-xs-vertical:       1px;
 @padding-xs-horizontal:     5px;
@@ -123,7 +127,7 @@
 //## Customizes the `.table` component with basic values, each used across all table variations.
 
 //** Padding for `<th>`s and `<td>`s.
-@table-cell-padding:            8px;
+@table-cell-padding:            5px;
 //** Padding for cells in `.table-condensed`.
 @table-condensed-cell-padding:  5px;
 
@@ -373,11 +377,11 @@
 // Inverted navbar
 // Reset inverted navbar basics
 @navbar-inverse-color:                      @gray-light;
-@navbar-inverse-bg:                         #222;
+@navbar-inverse-bg:                         @blabla-navbar-bg;
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
-@navbar-inverse-link-color:                 @gray-light;
+@navbar-inverse-link-color:                 @blabla-navbar-text;
 @navbar-inverse-link-hover-color:           #fff;
 @navbar-inverse-link-hover-bg:              transparent;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
@@ -401,7 +405,7 @@
 //##
 
 //=== Shared nav styles
-@nav-link-padding:                          8px 10px;
+@nav-link-padding:                          5px 10px;
 @nav-link-hover-bg:                         @gray-lighter;
 
 @nav-disabled-link-color:                   @gray-light;
@@ -851,3 +855,6 @@
 
 //** Horizontal offset for forms and lists.
 @component-offset-horizontal: 180px;
+
+// Description lists
+@description-list-margin:	10px 0;
