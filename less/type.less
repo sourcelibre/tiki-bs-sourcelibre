@@ -229,6 +229,9 @@ dd {
 // -------------------------
 
 // Abbreviations and acronyms
+abbr {
+	font-family: @secondary-font-family;
+}
 abbr[title],
 // Add data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
 abbr[data-original-title] {
@@ -304,4 +307,10 @@ address {
   margin-bottom: @line-height-computed;
   font-style: normal;
   line-height: @line-height-base;
+}
+
+// Nav links, menu
+.nav>li>a {
+	font-family: @nav-font-family;
+	text-transform:	uppercase;
 }
