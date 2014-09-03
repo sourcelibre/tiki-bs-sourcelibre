@@ -8,16 +8,17 @@
 //## Gray and brand colors for use across Bootstrap.
 
 @gray-darker:            lighten(#000, 13.5%); // #222
-@gray-dark:              lighten(#000, 20%);   // #333
-@gray:                   lighten(#000, 33.5%); // #555
-@gray-light:             lighten(#000, 60%);   // #999
-@gray-lighter:           lighten(#000, 93.5%); // #eee
+@gray-dark:              #695309;   // #333
+@gray:                   #bfa942; // #555
+@gray-light:             #788793;   // #999
+@gray-lighter:           #97a0a7; // #eee
 
-@brand-primary:         #769099;
-@brand-success:         #6fcdff;
-@brand-info:            #599ccc; // #59b0cc;
-@brand-warning:         #cc955e;
-@brand-danger:          #ff8b83;
+
+@brand-primary:         #7f754d;
+@brand-success:         #5cb85c;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+@brand-info:            #5bc0de;
 
 @blabla-navbar-bg:         @gray-dark;
 @blabla-navbar-text:       #ffffff;
@@ -42,11 +43,11 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  'Oswald', "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-serif:       'Karmilla', Georgia, "Times New Roman", Times, serif;
+@font-family-sans-serif:  Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-@font-family-monospace:   'Inconsolata', Menlo, Monaco, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-serif;
+@font-family-monospace:   Monaco, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
 @secondary-font-family:   @font-family-monospace;
 
 @font-size-base:          14px;
@@ -858,3 +859,8 @@
 
 // Description lists
 @description-list-margin:	10px 0;
+
+// custom sourcelibre stuff
+.glyphicon {
+    color: @brand-primary;
+}
